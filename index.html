@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./imagem/logo-alura.png" alt="Logo da Alura">
+    </header>
+    <main>
+        <div class="criptografia">
+            <textarea class="texto" wrap="hard" id="input" placeholder="Digite o texto..."></textarea>
+            <p id="aviso"><img src="./imagem/exclamacao.png" alt="Ponto de exclamação">Apenas letras minúsculas e sem
+                acento!</p>
+            <div class="btn-criptografia">
+                <button class="btn" id="codificador">Codificar</button>
+                <button class="btn" id="decodificador">Decodificar</button>
+            </div>
+        </div>
+        <div class="resultado">
+            <textarea wrap="hard" id="output" readonly placeholder="O texto codificado ou decodificado aparecerá aqui!"
+                class="texto-resultado"></textarea>
+            <button class="btn" id="copiar">Copiar</button>
+            <button class="btn" id="limpar">Limpar campos</button>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Christopher &copy 2024 - Challenge Programa ONE e Alura</p>
+    </footer>
+    <script type="text/javascript" src="/script.js"></script>
+</body>
+
+</html>
